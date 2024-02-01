@@ -4,7 +4,9 @@ import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
+  StarIcon
 } from '@heroicons/react/24/outline';
+import favIcon from './../../favicon.ico'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -18,6 +20,8 @@ const links = [
     icon: DocumentDuplicateIcon,
   },
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  {name: 'Source', href: 'https://nextjs.org/learn/dashboard-app', icon: StarIcon},
+  {name: 'Next Steps', href: 'https://nextjs.org/learn/dashboard-app/next-steps', icon: StarIcon}
 ];
 
 export default function NavLinks() {
